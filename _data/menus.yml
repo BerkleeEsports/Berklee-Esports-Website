@@ -1,0 +1,30 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "About"
+    url: "/team/"
+    weight: 2
+  - name: "Events"
+    url: "/"
+    weight: 3    
+  - name: "Gallery"
+    url: "/"
+    weight: 4
+  - name: "Shop"
+    url: "/services/"
+    weight: 5
+  # - name: "About"
+  #   url: "/about/"
+    # weight: 
+  - name: "Contact"
+    url: "/contact/"
+    weight: 6
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Contact"
+    url: "/contact/"
+    weight: 2

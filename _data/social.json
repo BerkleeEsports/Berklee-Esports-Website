@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Discord",
+    "link": "https://tinyurl.com/BerkleeEsportsDiscord",
+    "image": "images/social/discord.png"
+  },
+  {
+    "name": "Instagram",
+    "link": "https://www.instagram.com/berkleeesports/",
+    "image": "images/social/instagram.png"
+  },
+  {
+    "name": "Twitter",
+    "link": "https://twitter.com/BerkleeEsports",
+    "image": "images/social/twitter.svg"
+  },
+  {
+    "name": "Facebook",
+    "link": "https://www.facebook.com/groups/esportsberklee",
+    "image": "images/social/facebook.png"
+  }
+]
