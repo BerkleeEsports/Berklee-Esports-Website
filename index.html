@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Berklee Esports</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- <link href="css/sticky-footer.css" rel="stylesheet"> -->
+    </head>
+    <!-- style="background-color:#30373E" -->
+    <body id="page-top" style="background-image: url(../bsportssite/assets/img/header-bg.jpg);">
+        <!-- Navigation-->
+        <style>
+            /* Popup container */
+           .popup {
+           position: relative;
+           display: inline-block;
+           cursor: pointer;
+           }
+
+           /* The actual popup (appears on top) */
+           .popup .popuptext {
+           visibility: hidden;
+           width: 160px;
+           background-color: #555;
+           color: #fff;
+           text-align: center;
+           border-radius: 6px;
+           padding: 8px 0;
+           position: absolute;
+           z-index: 1;
+           top: 125%;
+           left: 50%;
+           margin-left: -80px;
+           }
+
+           /* Popup arrow */
+           .popup .popuptext::after {
+           content: "";
+           position: absolute;
+           bottom: 100%;
+           left: 50%;
+           margin-left: -5px;
+           border-width: 5px;
+           border-style: solid;
+           border-color: #555 transparent transparent transparent;
+           }
+
+           /* Toggle this class when clicking on the popup container (hide and show the popup) */
+           .popup .show {
+           visibility: visible;
+           -webkit-animation: fadeIn 1s;
+           animation: fadeIn 1s
+           }
+
+           /* Add animation (fade in the popup) */
+           @-webkit-keyframes fadeIn {
+           from {opacity: 0;}
+           to {opacity: 1;}
+           }
+
+           @keyframes fadeIn {
+           from {opacity: 0;}
+           to {opacity:1 ;}
+           } 
+         </style>
+         <script>
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+        </script>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img style="min-height: 80px"src="assets/img/bsports.png" alt="..." /></a>      
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <div class="popup" onmouseover="myFunction()">
+                            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>   
+                            <span class="popup popuptext" id="myPopup">  
+                                <ul class=" popup dropdown-menu dropdown-menu-dark dropdown-menu-macos mx-0 border-0 shadow" style="width: 220px;">
+                                    <li><a class="dropdown-item active" href="events.html">Calendar</a></li>
+                                    <li><a class="dropdown-item" href="#">G/M Jam</a></li>
+                                </ul>
+                            </span>
+                        </div>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- color background-color: #30373E; -->
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <br>
+                        <div class="masthead-heading text-uppercase"><br><img style="max-height:100px"src="assets/img/BETextWhiteTransparent.png"></div>
+                        <div class="position:relative">
+                            <div style="z-index:1; width:100%;height:50%"></div>
+                            <div class="masthead-subheading" style="font-size:10pt; z-index:2;">
+                                Collegiate tournaments, video game music, game nights, board games, card games, Minecraft, Dungeons and Dragons, and more. <br>Whether you’re here to play competitively or to vibe with friends, Berklee Esports is the club for all things Berklee gaming.
+                            </div><br><br>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3">
+                        <a class="twitter-timeline" data-height="480" href="https://twitter.com/BerkleeEsports?ref_src=twsrc%5Etfw">Tweets by BerkleeEsports</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+            <br>
+        </header>
+        <!-- Footer-->
+        <footer style="background-color:#30373E; position: fixed; bottom: 0; width: 100%;"class="footer py-4" >
+            <div style="margin: auto"class="container">
+                <div class="row align-items-center">
+                    <div style="color:white"class="col text-lg-start">Berklee Esports - 2021</div>
+                    <div style="color:white"class="col text-lg-start"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfe8TVlDEpnDpA0Nyv7QiXe1AuymMtfNPMatJOZ9QyQtO9qWQ/viewform?usp=sf_link"><u>Report bugs here!</u></a></div>
+                    
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://discord.gg/cdjbUBK">
+                                    <img class="nav-item"  style="max-height:30px" src="assets/discordlogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.facebook.com/berkleeesports">
+                                    <img style="max-height:30px" src="assets/facebooklogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://twitter.com/BerkleeEsports">
+                                    <img style="max-height:30px" src="assets/twitterlogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.instagram.com/berkleeesports/">
+                                    <img style="max-height:30px" src="assets/instagramlogo.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
