@@ -18,7 +18,7 @@
         <!-- <link href="css/sticky-footer.css" rel="stylesheet"> -->
     </head>
     <!-- style="background-color:#30373E" -->
-    <body id="page-top" style="background-image: url(assets/img/header-bg.jpg);background-repeat: no-repeat;">
+    <body id="page-top" style="background-image: url(assets/img/home.jpg);background-repeat: no-repeat;">
         <!-- Navigation-->
         <style>
             /* Popup container */
@@ -62,6 +62,13 @@
            -webkit-animation: fadeIn 1s;
            animation: fadeIn 1s
            }
+           .navtext {
+            color:white;
+            max-height: 15%;
+            font-family: Verdana;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
 
            /* Add animation (fade in the popup) */
            @-webkit-keyframes fadeIn {
@@ -85,7 +92,7 @@
                 document.location.href = 'mobile-home.html';
             }
         </script>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top"><img style="min-height: 80px"src="assets/img/bsports.png" alt="..." /></a>      
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -111,24 +118,58 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
+        <div class="fixed-top">
+            <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black); z-index: 5; position:absolute; top:0">
+            <div class="container" style="z-index:10; position: absolute; top: 20px; text-align: center; margin:auto; width: 100vw; max-width: 100vw">
+                <div class="row row-cols-7 align-items-center">
+                    <div class="col navtext text-center" style="padding-bottom: 1%;">
+                        ABOUT
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        GALLERY
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        EVENTS
+                    </div>
+                    <div class="col navtext">
+                        <img src="assets/img/bsports.png" style="max-width: 80%;">
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        SHOP
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        CONTACT
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        TEAMS
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- color background-color: #30373E; -->
         <!-- Masthead-->
+        <br><br>
         <header class="masthead">
             <div class="container"  style="padding-top: 5%;">
                 <div class="row">
-                    <div class="col">
-                        <div class="masthead-heading text-uppercase"><br><img style="max-height:100px"src="assets/img/BETextWhiteTransparent.png"></div>
+                    <div class="col"></div>
+                    <div class="col" style="padding:.8rem; background: rgba(0,0,0,.5); max-width:fit-content; max-height:fit-content">
+                        <div class="masthead-heading text-uppercase" style="max-height: fit-content; padding-top:30px">
+                            <!-- <br> -->
+                            <img style="max-height:100px"src="assets/img/BETextWhiteTransparent.png">
+                        </div>
                         <div class="position:relative">
                             <div style="z-index:1; width:100%;height:50%"></div>
-                            <div class="masthead-subheading" style="font-size:10pt; z-index:2;">
-                                Collegiate tournaments, video game music, game nights, board games, card games, Minecraft, Dungeons and Dragons, and more. <br>Whether you’re here to play competitively or to vibe with friends, Berklee Esports is the club for all things Berklee gaming.
-                            </div><br><br>
+                            <div class="masthead-subheading" style="font-family:Verdana; font-size:12pt; z-index:2; line-height:1.5rem; min-width:max-content;">
+                                Collegiate tournaments, video game music, game nights, board games, card games, <br>Minecraft, Dungeons and Dragons, and more. Whether you’re here to play competitively <br>or to vibe with friends, Berklee Esports is the club for all things Berklee gaming.
+                            </div>
                         </div>
                     </div>
-                    <div class="col col-lg-3">
+                    <div class="col"></div>
+                    <!-- <div class="col col-lg-3">
                         <a class="twitter-timeline" data-height="480" href="https://twitter.com/BerkleeEsports?ref_src=twsrc%5Etfw">Tweets by BerkleeEsports</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+                </div> -->
             </div>
             <br>
         </header>
@@ -136,8 +177,8 @@
         <footer style="background-color:#30373E; position: fixed; bottom: 0; width: 100%;"class="footer py-4" >
             <div style="margin: auto"class="container">
                 <div class="row align-items-center">
-                    <div style="color:white"class="col text-lg-start">Berklee Esports - 2021</div>
-                    <div style="color:white"class="col text-lg-start"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfe8TVlDEpnDpA0Nyv7QiXe1AuymMtfNPMatJOZ9QyQtO9qWQ/viewform?usp=sf_link"><u>Report bugs here!</u></a></div>
+                    <div style="color:white"class="col text-lg-start"><b>Berklee Esports - 2022</b></div>
+                    <div style="color:white"class="col text-lg-start"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfe8TVlDEpnDpA0Nyv7QiXe1AuymMtfNPMatJOZ9QyQtO9qWQ/viewform?usp=sf_link"><u></u></a></div>
                     
                     <div class="col-3">
                         <div class="row">
@@ -159,6 +200,11 @@
                             <div class="col">
                                 <a href="https://www.instagram.com/berkleeesports/">
                                     <img style="max-height:30px" src="assets/instagramlogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
+                                    <img style="max-height:30px" src="assets/youtube.png">
                                 </a>
                             </div>
                         </div>

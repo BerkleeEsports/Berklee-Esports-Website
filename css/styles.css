@@ -10,6 +10,13 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .navtext {
+  color:white;
+  max-height: 15%;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 1.3em;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
