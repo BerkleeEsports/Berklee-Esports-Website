@@ -18,7 +18,8 @@
         <!-- <link href="css/sticky-footer.css" rel="stylesheet"> -->
     </head>
     <!-- style="background-color:#30373E" -->
-    <body id="page-top" style="background-image: url(assets/img/home.jpg);background-repeat: no-repeat;">
+    <body id="page-top" style="background-image: url(assets/img/home.jpg); background-repeat: no-repeat; background-size: 100% auto; background-position: center top;
+    background-attachment: fixed;">
         <!-- Navigation-->
         <style>
             /* Popup container */
@@ -92,33 +93,6 @@
                 document.location.href = 'mobile-home.html';
             }
         </script>
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img style="min-height: 80px"src="assets/img/bsports.png" alt="..." /></a>      
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <div class="popup" onmouseover="myFunction()">
-                            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>   
-                            <span class="popup popuptext" id="myPopup">  
-                                <ul class=" popup dropdown-menu dropdown-menu-dark dropdown-menu-macos mx-0 border-0 shadow" style="width: 220px;">
-                                    <li><a class="dropdown-item active" href="events.html">Calendar</a></li>
-                                    <li><a class="dropdown-item" href="#">G/M Jam</a></li>
-                                </ul>
-                            </span>
-                        </div>
-                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
         <div class="fixed-top">
             <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black); z-index: 5; position:absolute; top:0">
             <div class="container" style="z-index:10; position: absolute; top: 20px; text-align: center; margin:auto; width: 100vw; max-width: 100vw">
@@ -127,13 +101,16 @@
                         ABOUT
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        GALLERY
+                        EVENTS
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        EVENTS
+                        TEAMS
                     </div>
                     <div class="col navtext">
                         <img src="assets/img/bsports.png" style="max-width: 80%;">
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        GALLERY
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
                         SHOP
@@ -141,9 +118,7 @@
                     <div class="col navtext" style="padding-bottom: 1%;">
                         CONTACT
                     </div>
-                    <div class="col navtext" style="padding-bottom: 1%;">
-                        TEAMS
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -152,24 +127,19 @@
         <br><br>
         <header class="masthead">
             <div class="container"  style="padding-top: 5%;">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col" style="padding:.8rem; background: rgba(0,0,0,.5); max-width:fit-content; max-height:fit-content">
+                <div class="row justify-content-center">
+                    <div class="col" style="padding:.8rem; background: rgba(0,0,0,.5); max-width:fit-content; max-height:fit-content; ">
                         <div class="masthead-heading text-uppercase" style="max-height: fit-content; padding-top:30px">
-                            <!-- <br> -->
                             <img style="max-height:100px"src="assets/img/BETextWhiteTransparent.png">
                         </div>
                         <div class="position:relative">
                             <div style="z-index:1; width:100%;height:50%"></div>
-                            <div class="masthead-subheading" style="font-family:Verdana; font-size:12pt; z-index:2; line-height:1.5rem; min-width:max-content;">
+                            <div class="masthead-subheading" style="font-family:Verdana; font-size:12pt; z-index:2; line-height:1.5rem; min-width:max-content; ">
                                 Collegiate tournaments, video game music, game nights, board games, card games, <br>Minecraft, Dungeons and Dragons, and more. Whether you’re here to play competitively <br>or to vibe with friends, Berklee Esports is the club for all things Berklee gaming.
                             </div>
                         </div>
                     </div>
-                    <div class="col"></div>
-                    <!-- <div class="col col-lg-3">
-                        <a class="twitter-timeline" data-height="480" href="https://twitter.com/BerkleeEsports?ref_src=twsrc%5Etfw">Tweets by BerkleeEsports</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div> -->
+                </div>
             </div>
             <br>
         </header>
@@ -188,6 +158,11 @@
                                 </a>
                             </div>
                             <div class="col">
+                                <a href="https://www.instagram.com/berkleeesports/">
+                                    <img style="max-height:30px" src="assets/instagramlogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
                                 <a href="https://www.facebook.com/berkleeesports">
                                     <img style="max-height:30px" src="assets/facebooklogo.png">
                                 </a>
@@ -197,11 +172,7 @@
                                     <img style="max-height:30px" src="assets/twitterlogo.png">
                                 </a>
                             </div>
-                            <div class="col">
-                                <a href="https://www.instagram.com/berkleeesports/">
-                                    <img style="max-height:30px" src="assets/instagramlogo.png">
-                                </a>
-                            </div>
+                            
                             <div class="col">
                                 <a href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
                                     <img style="max-height:30px" src="assets/youtube.png">
