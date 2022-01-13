@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Berklee Esports</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+    </head>
+    <body id="page-top" style="background-image: url(assets/img/home.jpg); background-attachment:fixed">
+        <!-- Navigation-->
+        <style>
+            /* Popup container */
+           .popup {
+           position: relative;
+           display: inline-block;
+           cursor: pointer;
+           }
+
+           /* The actual popup (appears on top) */
+           .popup .popuptext {
+           visibility: hidden;
+           width: 160px;
+           background-color: #555;
+           color: #fff;
+           text-align: center;
+           border-radius: 6px;
+           padding: 8px 0;
+           position: absolute;
+           z-index: 1;
+           top: 125%;
+           left: 50%;
+           margin-left: -80px;
+           }
+
+           /* Popup arrow */
+           .popup .popuptext::after {
+           content: "";
+           position: absolute;
+           bottom: 100%;
+           left: 50%;
+           margin-left: -5px;
+           border-width: 5px;
+           border-style: solid;
+           border-color: #555 transparent transparent transparent;
+           }
+
+           /* Toggle this class when clicking on the popup container (hide and show the popup) */
+           .popup .show {
+           visibility: visible;
+           -webkit-animation: fadeIn 1s;
+           animation: fadeIn 1s
+           }
+
+           /* Add animation (fade in the popup) */
+           @-webkit-keyframes fadeIn {
+           from {opacity: 0;}
+           to {opacity: 1;}
+           }
+
+           @keyframes fadeIn {
+           from {opacity: 0;}
+           to {opacity:1 ;}
+           } 
+           .logo {
+               max-height: 7em;
+           }
+         </style>
+         <script>
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+        </script>
+        <div class="fixed-top" style="z-index: 100000">
+            <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black; position:absolute; top:0">
+            <div class="container" style="z-index:10; position: absolute; top: 20px; text-align: center; margin:auto; width: 100vw; max-width: 100vw">
+                <div class="row row-cols-7 align-items-center">
+                    <div class="col navtext text-center" style="padding-bottom: 1%;">
+                        ABOUT
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        EVENTS
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        TEAMS
+                    </div>
+                    <div class="col navtext">
+                        <img src="assets/img/bsports.png" style="max-width: 80%;">
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        GALLERY
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        SHOP
+                    </div>
+                    <div class="col navtext" style="padding-bottom: 1%;">
+                        CONTACT
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- Masthead-->
+        <script>
+            function expandbt(arg) {
+                document.getElementById(arg).style.filter = "drop-shadow(0 0 0.75rem black)";
+            }
+            function unexpandbt(arg) {
+                document.getElementById(arg).style.filter = "none";
+            }
+            function close() {
+                console.log("alksjd");
+                //popup.classList.toggle('active');
+            }
+        </script>
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col bg-light" style="min-width: 95%;">
+                    <br><br><br>
+                    <div class="row">
+                        <img id="bt" style="max-height: 400px; width:auto"  onclick="showpopup('Rush the B Train', 'CS:GO', ['Christian', 'David'])" onmouseleave="unexpandbt('bt')" onmouseover="expandbt('bt')" src="assets/img/team_logos/btbar.png">
+                        
+                    </div>
+                    <p style="line-height: 10px;"></p>
+
+                    <div class="row">
+                        <img style="max-height: 400px; width:auto" onclick="showpopup('College of Bards', 'League of Legends', ['Christian', 'David'])" src="assets/img/team_logos/cbbar.png" id="cb"onmouseleave="unexpandbt('cb')" onmouseover="expandbt('cb')">
+                        <br>
+                    </div>
+                    <p style="line-height: 10px;"></p>
+                    <div class="row">
+                        <img style="max-height: 400px; width:auto" src="assets/img/team_logos/shbar.png" onclick="showpopup('Stairway to Haven', 'Valorant', ['Christian', 'David'])" id="sh"onmouseleave="unexpandbt('sh')" onmouseover="expandbt('sh')">
+                        <br>
+                    </div>
+                    <p style="line-height: 10px;"></p>
+                    <div class="row">
+                        <img style="max-height: 400px; width:auto"src="assets/img/team_logos/srbar.png" onclick="showpopup('Summoners Rift', 'League of Legends', ['Christian', 'David'])" id="sr"onmouseleave="unexpandbt('sr')" onmouseover="expandbt('sr')">
+                        <br>
+                    </div>
+                    <p style="line-height: 10px;"></p>
+                    <div class="row">
+                        <img style="max-height: 400px; width:auto"src="assets/img/team_logos/odbar.png" onclick="showpopup('Overdrive', 'Overwatch', ['Christian', 'David'])" id="od"onmouseleave="unexpandbt('od')" onmouseover="expandbt('od')">
+                        <br>
+                    </div>
+                    <p style="line-height: 10px;"></p>
+                    <div class="row" style="padding-bottom: 70px;">
+                        <br>
+                    </div>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        </div>
+        <div class="popuup justify-content-center">
+            <div class="container justify-content-center" style="max-width: fit-content; ">
+                <div class="row justify-content-center" style="background-color: white; width: 80vw;">
+                    <div class="col align-items-center d-flex justify-content-center" style="height: 38vh; padding-top:5vh; padding-bottom:5vh;">
+                        <center class="align-items-center">
+                            <video autoplay muted loop style="vertical-align: center; width: 45vh">
+                                <source src="assets/videos/val.mp4" type="video/mp4">
+                            </video>
+                        </center>
+                    </div>
+                    <div class="col" >
+                        <h1 id="teamname" style="padding-top:10px; text-align:left">Team Name</p>
+                        <h3 id="game" style=" text-align:left">Game</p>
+                        <p id="players" style="text-align:left">Players</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="background-color:#30373E; position: fixed; bottom: 0; width: 100%; z-index:100000"class="footer py-4" >
+            <div style="margin: auto"class="container">
+                <div class="row align-items-center">
+                    <div style="color:white"class="col text-lg-start"><b>Berklee Esports - 2022</b></div>
+                    <div style="color:white"class="col text-lg-start"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfe8TVlDEpnDpA0Nyv7QiXe1AuymMtfNPMatJOZ9QyQtO9qWQ/viewform?usp=sf_link"><u></u></a></div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://discord.gg/cdjbUBK">
+                                    <img class="nav-item" style="max-height:30px" src="assets/discordlogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.instagram.com/berkleeesports/">
+                                    <img style="max-height:30px"  src="assets/instagramlogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.facebook.com/berkleeesports">
+                                    <img style="max-height:30px" src="assets/facebooklogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://twitter.com/BerkleeEsports">
+                                    <img style="max-height:30px" src="assets/twitterlogo.png">
+                                </a>
+                            </div>
+                            
+                            <div class="col">
+                                <a href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
+                                    <img style="max-height:30px" src="assets/youtube.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const popup = document.querySelector('.popuup');
+            
+            let index = 0;
+            function close() {
+                console.log("alksjd");
+                //popup.classList.toggle('active');
+            }
+            function showpopup(teamName, game, players) {
+                popup.classList.toggle('active');
+                document.getElementById("teamname").innerHTML = teamName;
+                document.getElementById("game").innerHTML = game;
+            }
+        
+            </script>
+            <style>
+            *:focus{
+                outline: none;
+            }
+            
+            .popuup{
+                position: fixed;
+                top: 50vh;
+                left:50vw;
+                transform: translate(-50%, -50%) scale(0);
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.596);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 5;
+                overflow: hidden;
+                transition: 1s;
+                opacity: 0;
+            }
+            
+            .popuup.active{
+                /* top: 10%; */
+                z-index: 10000;
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            
+            .popuup.active .close-btn,
+            .popuup.active .image-name,
+            .popuup.active .index,
+            .popuup.active .large-image,
+            .popuup.active .arrow-btn{
+                opacity: 1;
+                transition: opacity .5s;
+                transition-delay: 1s;
+            }
+            
+            .top-bar{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                background: #000;
+                color: #fff;
+                text-align: center;
+                line-height: 50px;
+                font-weight: 300;
+            }
+            
+            .close-btn{
+                opacity: 0;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #f00;
+                cursor: pointer;
+            }
+            </style>
+    </body>
+</html>
