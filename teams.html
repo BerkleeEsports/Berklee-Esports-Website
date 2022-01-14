@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overscroll-behavior-y:none">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,63 +13,12 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script href="js/main.js"></script>
 
     </head>
     <body id="page-top" style="background-image: url(assets/img/home.jpg); background-attachment:fixed">
         <!-- Navigation-->
         <style>
-            /* Popup container */
-           .popup {
-           position: relative;
-           display: inline-block;
-           cursor: pointer;
-           }
-
-           /* The actual popup (appears on top) */
-           .popup .popuptext {
-           visibility: hidden;
-           width: 160px;
-           background-color: #555;
-           color: #fff;
-           text-align: center;
-           border-radius: 6px;
-           padding: 8px 0;
-           position: absolute;
-           z-index: 1;
-           top: 125%;
-           left: 50%;
-           margin-left: -80px;
-           }
-
-           /* Popup arrow */
-           .popup .popuptext::after {
-           content: "";
-           position: absolute;
-           bottom: 100%;
-           left: 50%;
-           margin-left: -5px;
-           border-width: 5px;
-           border-style: solid;
-           border-color: #555 transparent transparent transparent;
-           }
-
-           /* Toggle this class when clicking on the popup container (hide and show the popup) */
-           .popup .show {
-           visibility: visible;
-           -webkit-animation: fadeIn 1s;
-           animation: fadeIn 1s
-           }
-
-           /* Add animation (fade in the popup) */
-           @-webkit-keyframes fadeIn {
-           from {opacity: 0;}
-           to {opacity: 1;}
-           }
-
-           @keyframes fadeIn {
-           from {opacity: 0;}
-           to {opacity:1 ;}
-           } 
            .logo {
                max-height: 7em;
            }
@@ -81,7 +30,7 @@
             }
         </script>
         <div class="fixed-top" style="z-index: 100000">
-            <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black; position:absolute; top:0">
+            <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black); position:absolute; top:0">
             <div class="container" style="z-index:10; position: absolute; top: 20px; text-align: center; margin:auto; width: 100vw; max-width: 100vw">
                 <div class="row row-cols-7 align-items-center">
                     <div class="col navtext text-center" style="padding-bottom: 1%;">
@@ -123,35 +72,48 @@
                 //popup.classList.toggle('active');
             }
         </script>
+        
         <div class="container" >
             <div class="row">
                 <div class="col-sm"></div>
                 <div class="col bg-light" style="min-width: 95%;">
-                    <br><br><br>
                     <div class="row">
-                        <img id="bt" style="max-height: 400px; width:auto"  onclick="showpopup('Rush the B Train', 'CS:GO', ['Christian', 'David'])" onmouseleave="unexpandbt('bt')" onmouseover="expandbt('bt')" src="assets/img/team_logos/btbar.png">
                         
+                        <h2 style="text-align: center;">
+                            <br><br><br><br><p style="line-height: 45px;"></p>
+                            TRYOUTS 1/22-1/23 and 1/29-1/30<br><a href="https://discord.gg/aBwwkyWu7m">JOIN DISCORD FOR MORE INFO</a>
+                            <p style="line-height: 15px;"></p>
+                        </h2>
+                        <div class="col">
+                            <div class="row">
+                                <img id="tf" style="max-height: 400px; width:auto"  onclick="showpopup('TF251', 'Team Fortress 2', ['@BigOrangeBoy#1317', '@Fialoy#4483','@uniahn#2631','@SquiddySquibbles#9148','@Monk#7407','@minusson#2436'])" onmouseleave="unexpandbt('tf')" onmouseover="expandbt('tf')" src="assets/img/team_logos/tfbar.png">
+                                <p style="line-height:6px"></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <img id="af" style="max-height: 400px; width:auto"  onclick="showpopup('Aint No Fuse', 'APEX Legends', ['@Jliu137#3814', '@MurphyMan#8265','@The Snorlax#1762'])" onmouseleave="unexpandbt('af')" onmouseover="expandbt('af')" src="assets/img/team_logos/afbar.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img style="max-height: 400px; width:auto"src="assets/img/team_logos/srbar.png" onclick="showpopup('Summoners Rift', 'League of Legends', ['@bananaman (30%)#4556', '@Evan#8677','@fettuccine#6097','@KoreanNinjaLee#8516','@KPberklee#8733','@Latona#0001','@Tae#0868'])" id="sr"onmouseleave="unexpandbt('sr')" onmouseover="expandbt('sr')">
                     </div>
                     <p style="line-height: 10px;"></p>
-
                     <div class="row">
-                        <img style="max-height: 400px; width:auto" onclick="showpopup('College of Bards', 'League of Legends', ['Christian', 'David'])" src="assets/img/team_logos/cbbar.png" id="cb"onmouseleave="unexpandbt('cb')" onmouseover="expandbt('cb')">
-                        <br>
+                        <img style="max-height: 400px; width:auto" onclick="showpopup('College of Bards', 'League of Legends', ['@worpp#5029', '@CZ#2467','@Jung Hyun Kim#8963','@Latona#0001','@Artym#6282','@simplytarable#3163','@~Purdoonadon#7931'])" src="assets/img/team_logos/cbbar.png" id="cb"onmouseleave="unexpandbt('cb')" onmouseover="expandbt('cb')">
                     </div>
                     <p style="line-height: 10px;"></p>
                     <div class="row">
-                        <img style="max-height: 400px; width:auto" src="assets/img/team_logos/shbar.png" onclick="showpopup('Stairway to Haven', 'Valorant', ['Christian', 'David'])" id="sh"onmouseleave="unexpandbt('sh')" onmouseover="expandbt('sh')">
-                        <br>
+                        <img style="max-height: 400px; width:auto" src="assets/img/team_logos/shbar.png" onclick="showpopup('Stairway to Haven', 'Valorant', ['@Jliu137#3814', '@coal#2800','@ESplatinum#4461','@Mark#6687','@MrKimchi#3154'])" id="sh"onmouseleave="unexpandbt('sh')" onmouseover="expandbt('sh')">
                     </div>
                     <p style="line-height: 10px;"></p>
                     <div class="row">
-                        <img style="max-height: 400px; width:auto"src="assets/img/team_logos/srbar.png" onclick="showpopup('Summoners Rift', 'League of Legends', ['Christian', 'David'])" id="sr"onmouseleave="unexpandbt('sr')" onmouseover="expandbt('sr')">
-                        <br>
+                        <img style="max-height: 400px; width:auto"src="assets/img/team_logos/odbar.png" onclick="showpopup('Overdrive', 'Overwatch', ['@Astro#5221', '@noble#9900','@Jung Hyun Kim#8963','@oidoldol#9643','@seb#8752','@FRANKPUCCINO#7263','@FutureYou#7535'])" id="od"onmouseleave="unexpandbt('od')" onmouseover="expandbt('od')">
                     </div>
                     <p style="line-height: 10px;"></p>
                     <div class="row">
-                        <img style="max-height: 400px; width:auto"src="assets/img/team_logos/odbar.png" onclick="showpopup('Overdrive', 'Overwatch', ['Christian', 'David'])" id="od"onmouseleave="unexpandbt('od')" onmouseover="expandbt('od')">
-                        <br>
+                        <img id="bt" style="max-height: 400px; width:auto"  onclick="showpopup('Rush the B Train', 'CS:GO', ['@BigOrangeBoy#1317', '@astrodesert#8496','@Spekski#0903'])" onmouseleave="unexpandbt('bt')" onmouseover="expandbt('bt')" src="assets/img/team_logos/btbar.png">
                     </div>
                     <p style="line-height: 10px;"></p>
                     <div class="row" style="padding-bottom: 70px;">
@@ -161,20 +123,20 @@
                 <div class="col-sm"></div>
             </div>
         </div>
-        <div class="popuup justify-content-center">
-            <div class="container justify-content-center" style="max-width: fit-content; ">
-                <div class="row justify-content-center" style="background-color: white; width: 80vw;">
-                    <div class="col align-items-center d-flex justify-content-center" style="height: 38vh; padding-top:5vh; padding-bottom:5vh;">
-                        <center class="align-items-center">
-                            <video autoplay muted loop style="vertical-align: center; width: 45vh">
+        <div  class="popuup justify-content-center background">
+            <div  class="container justify-content-center background" style="max-width: fit-content; ">
+                <div  class="row justify-content-center" style="background-color: white; width: 80vw;">
+                    <div  class="col align-items-center d-flex justify-content-center" style="height: 38vh; padding-top:5vh; padding-bottom:5vh;">
+                        <center  class="align-items-center">
+                            <video  autoplay muted loop style="vertical-align: center; width: 45vh">
                                 <source src="assets/videos/val.mp4" type="video/mp4">
                             </video>
                         </center>
                     </div>
-                    <div class="col" >
-                        <h1 id="teamname" style="padding-top:10px; text-align:left">Team Name</p>
-                        <h3 id="game" style=" text-align:left">Game</p>
-                        <p id="players" style="text-align:left">Players</p>
+                    <div class="col">
+                        <h1 id="teamname" style="padding-top:10px; text-align:left;">Team Name</p>
+                        <h2 id="game" style="text-align:left;">Game</p>
+                        <h4 id="players" style="text-align:left;">Players</h4>
                     </div>
                 </div>
             </div>
@@ -206,7 +168,6 @@
                                     <img style="max-height:30px" src="assets/twitterlogo.png">
                                 </a>
                             </div>
-                            
                             <div class="col">
                                 <a href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
                                     <img style="max-height:30px" src="assets/youtube.png">
@@ -220,16 +181,22 @@
 
         <script>
             const popup = document.querySelector('.popuup');
+            const bg = document.querySelector('.background');
             
-            let index = 0;
-            function close() {
-                console.log("alksjd");
-                //popup.classList.toggle('active');
-            }
+            bg.addEventListener('click', () => {
+                popup.classList.toggle('active');
+            })
+
             function showpopup(teamName, game, players) {
                 popup.classList.toggle('active');
                 document.getElementById("teamname").innerHTML = teamName;
                 document.getElementById("game").innerHTML = game;
+                var playersString = "";
+
+                for (let i = 0; i < players.length; i++) {
+                    playersString = playersString + players[i] + ", ";
+                }
+                document.getElementById("players").innerHTML = playersString;
             }
         
             </script>
