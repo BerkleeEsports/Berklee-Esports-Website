@@ -138,13 +138,13 @@
                 <div class="col-sm"></div>
             </div>
         </div>
-        <div  class="popuup justify-content-center background">
-            <div  class="container justify-content-center background" style="max-width: fit-content; ">
-                <div  class="row justify-content-center" style="background-color: white; width: 80vw;">
-                    <div  class="col align-items-center d-flex justify-content-center" style="height: 38vh; padding-top:5vh; padding-bottom:5vh;">
-                        <center  class="align-items-center">
-                            <video  autoplay muted loop style="vertical-align: center; width: 45vh">
-                                <source src="assets/videos/val.mp4" type="video/mp4">
+        <div class="popuup justify-content-center background">
+            <div class="container justify-content-center background" style="max-width: fit-content; ">
+                <div class="row justify-content-center" style="background-color: white; width: 80vw;">
+                    <div class="col align-items-center d-flex justify-content-center" style="height: 38vh; padding-top:5vh; padding-bottom:5vh;">
+                        <center class="align-items-center">
+                            <video id="video" autoplay muted loop style="vertical-align: center; width: 45vh">
+                                <source type="video/mp4">
                             </video>
                         </center>
                     </div>
@@ -212,6 +212,22 @@
                     playersString = playersString + players[i] + ", ";
                 }
                 document.getElementById("players").innerHTML = playersString;
+                var video = document.getElementById("video");
+                if (game == "Valorant") {
+                    video.src = "assets/videos/val.mp4";
+                } else if (game == "CS:GO") {
+                    video.src = "assets/videos/csgo.mp4";
+                } else if (game == "Overwatch") {
+                    video.src = "assets/videos/ow.mp4";
+                } else if (game == "League of Legends") {
+                    video.src = "assets/videos/leg.mp4";
+                } else if (game == "APEX Legends") {
+                    video.src = "assets/videos/apex.mp4";
+                } else if (game == "Team Fortress 2") {
+                    video.src = "assets/videos/tf2.mp4";
+                }
+                video.load();
+                video.play();
             }
         
             </script>
