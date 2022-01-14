@@ -15,7 +15,7 @@
   max-height: 15%;
   font-family: Verdana;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 3vh;
 }
 :root {
   --bs-blue: #0d6efd;
@@ -247,7 +247,9 @@ sup {
 }
 
 a {
-  color: #ffc800;
+  color: #ffc800;.navtext {
+    font-size: 3vh;
+}
   text-decoration: underline;
 }
 a:hover {

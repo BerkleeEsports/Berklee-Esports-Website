@@ -13,10 +13,11 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/dropdown.css" rel="stylesheet" />
         <script href="js/main.js"></script>
 
     </head>
-    <body id="page-top" style="background-image: url(assets/img/home.jpg); background-attachment:fixed">
+    <body id="page-top" style="background-image: url(assets/img/home.jpg); background-repeat: no-repeat; background-size:100%;background-attachment: fixed;">
         <!-- Navigation-->
         <style>
            .logo {
@@ -29,30 +30,44 @@
               popup.classList.toggle("show");
             }
         </script>
-        <div class="fixed-top" style="z-index: 100000">
-            <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black); position:absolute; top:0">
+        <div class="fixed-top">
+            <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black); z-index: 5; position:absolute; top:0">
             <div class="container" style="z-index:10; position: absolute; top: 20px; text-align: center; margin:auto; width: 100vw; max-width: 100vw">
                 <div class="row row-cols-7 align-items-center">
                     <div class="col navtext text-center" style="padding-bottom: 1%;">
-                        ABOUT
+                        <a href="about.html" style="text-decoration: none; color:white">ABOUT</a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        EVENTS
+                        <div class="dropdown">
+                            <div class="dropbtn">EVENTS</div>
+                            <div class="dropdown-content">
+                              <a href="#">GAME NIGHTS</a>
+                              <a href="#">BOARD GAMES & TCG</a>
+                              <a href="#">DND</a>
+                              <a href="#">BATTLE BASH</a>
+                            </div>
+                        </div> 
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        TEAMS
+                        <div class="dropdown">
+                            <div class="dropbtn">TEAMS</div>
+                            <div class="dropdown-content">
+                              <a href="teams.html">COMPETITIVE TEAMS</a>
+                              <a href="minecraft.html">MINECRAFT</a>
+                            </div>
+                        </div> 
                     </div>
                     <div class="col navtext">
-                        <img src="assets/img/bsports.png" style="max-width: 80%;">
+                        <a href="index.html"><img src="assets/img/bsports.png" style="max-width: 80%;"></a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        GALLERY
+                        <a href="underconstruction.html" style="text-decoration: none; color:white">GALLERY</a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        SHOP
+                        <a href="underconstruction.html" style="text-decoration: none; color:white">SHOP</a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        CONTACT
+                        <a href="contact.html" style="text-decoration: none; color:white">CONTACT</a>
                     </div>
                     
                 </div>
@@ -77,10 +92,10 @@
             <div class="row">
                 <div class="col-sm"></div>
                 <div class="col bg-light" style="min-width: 95%;">
+                    <p style="padding-top:25vh"></p>
                     <div class="row">
-                        
                         <h2 style="text-align: center;">
-                            <br><br><br><br><p style="line-height: 45px;"></p>
+                            
                             TRYOUTS 1/22-1/23 and 1/29-1/30<br><a href="https://discord.gg/aBwwkyWu7m">JOIN DISCORD FOR MORE INFO</a>
                             <p style="line-height: 15px;"></p>
                         </h2>
