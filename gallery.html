@@ -3,19 +3,19 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <script src="js/main.js"></script>
         <title>Berklee Esports</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- <link href="css/gallery.css" rel="stylesheet" /> -->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
-		<!-- <link href="css/modalgallery.css" rel="stylesheet"/> -->
+        <link href="css/dropdown.css" rel="stylesheet" />
+        <link href="css/carousel.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="mobile-detect.js"></script>
     </head>
     <body id="page-top">
         <div class="fixed-top">
@@ -23,25 +23,41 @@
             <div class="container" style="z-index:10; position: absolute; top: 20px; text-align: center; margin:auto; width: 100vw; max-width: 100vw">
                 <div class="row row-cols-7 align-items-center">
                     <div class="col navtext text-center" style="padding-bottom: 1%;">
-                        ABOUT
+                        <a href="about.html" style="text-decoration: none; color:white">ABOUT</a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        GALLERY
+                        <div class="dropdown">
+                            <div class="dropbtn">EVENTS</div>
+                            <div class="dropdown-content" style="transform: translateX(-45px);">
+                              <a href="gamenights.html">GAME NIGHTS</a>
+                              <a href="boardgames.html">BOARD GAMES/TCG</a>
+                              <a href="dnd.html">DND</a>
+                              <a href="battlebash.html">BATTLE BASH</a>
+                              <a href="gmjam.html">G/M JAM</a>
+                              <a href="underconstruction.html">UPCOMING EVENTS</a>
+                            </div>
+                        </div> 
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        EVENTS
+                        <div class="dropdown">
+                            <div class="dropbtn">TEAMS</div>
+                            <div class="dropdown-content" style="transform: translateX(-60px);">
+                              <a href="teams.html">COMPETITIVE TEAMS</a>
+                              <a href="minecraft.html">MINECRAFT</a>
+                            </div>
+                        </div> 
                     </div>
                     <div class="col navtext">
-                        <img src="assets/img/bsports.png" style="max-width: 80%;">
+                        <a href="index.html"><img src="assets/img/bsports.png" style="max-width: 80%;"></a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        SHOP
+                        <a href="underconstruction.html" style="text-decoration: none; color:white">GALLERY</a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        CONTACT
+                        <a href="underconstruction.html" style="text-decoration: none; color:white">SHOP</a>
                     </div>
                     <div class="col navtext" style="padding-bottom: 1%;">
-                        TEAMS
+                        <a href="contact.html" style="text-decoration: none; color:white">CONTACT</a>
                     </div>
                 </div>
             </div>
@@ -83,12 +99,6 @@
             }
             
             </style>
-            <!-- <div class="containerr">
-              <img src="assets/img/gallery/bcer_mgn_bst/IMG_1.jpg" alt="Avatar" class="imagee">
-              <div class="overlayy imagee">
-            
-              </div>
-            </div> -->
 
         <div class="row" style="padding: 30px;">
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 containerr">
@@ -96,262 +106,256 @@
                 src="assets/img/gallery/bcer_mgn_bst/IMG_1.jpg"
                 class="w-100 shadow-1-strong rounded mb-4 image imagee"
                 alt=""
+                onclick="setPath('assets/img/gallery/bcer_mgn_bst/', 2)"
               />
-              <!-- <div class="overlayy imagee">
-            
-            </div> -->
               <img
-                src="/assets/img/gallery/board_game_night_1/IMG_1.JPG"
-                class="w-100 shadow-1-strong rounded mb-4"
+                src="assets/img/gallery/battle_bash/IMG_1.JPG"
+                class="w-100 shadow-1-strong rounded mb-4 image imagee"
                 alt=""
+                onclick="setPath('assets/img/gallery/battle_bash/', 3)"
               />
             </div>
           
             <div class="col-lg-4 mb-4 mb-lg-0">
               <img
                 src="assets/img/gallery/board_game_night_2/IMG_1.JPG"
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 image imagee"
                 alt=""
+                onclick="setPath('assets/img/gallery/board_game_night_2/', 1)"
               />
           
               <img
-                src="assets/img/gallery/board_game_night_2/IMG_1.JPG"
-                class="w-100 shadow-1-strong rounded mb-4"
+                src="assets/img/gallery/board_game_night_1/IMG_1.JPG"
+                class="w-100 shadow-1-strong rounded mb-4 image imagee"
                 alt=""
+                onclick="setPath('assets/img/gallery/board_game_night_1/', 0)"
               />
             </div>
           
             <div class="col-lg-4 mb-4 mb-lg-0">
               <img
                 src="assets/img/gallery/board_game_night_3/IMG_1.JPG"
-                class="w-100 shadow-1-strong rounded mb-4"
+                class="w-100 shadow-1-strong rounded mb-4 image imagee"
                 alt=""
+                onclick="setPath('assets/img/gallery/board_game_night_3/', 2)"
               />
-          
               <img
-                src="assets/img/a.jpg"
-                class="w-100 shadow-1-strong rounded mb-4"
+                src="assets/img/gallery/media_night/IMG_1.JPG"
+                class="w-100 shadow-1-strong rounded mb-4 image imagee"
                 alt=""
+                onclick="setPath('assets/img/gallery/media_night/', 1)"
               />
             </div>
           </div>
+          <br><br><br>
 
-<div class="popuup">
-    <div class="top-bar">
-        <p class="image-name">img1.png</p>
-        <span class="close-btn"></span>
-    </div>
-    <button class="arrow-btn left-arrow"><img style="max-width: 60px" src="assets/img/gallery/left.jpeg" alt=""></button>
-    <button  class="arrow-btn right-arrow"><img style="max-width: 60px" src="assets/img/gallery/right.jpeg" alt=""></button>
-    <img src="assets/img/a.jpg" class="large-image" alt="">
-    <h1 class="index">01</h1>
-</div>
-<script>
-const images = [...document.querySelectorAll('.image')];
-
-const popup = document.querySelector('.popuup');
-const closeBtn = document.querySelector('.close-btn');
-const imageName = document.querySelector('.image-name');
-const largeImage = document.querySelector('.large-image');
-const imageIndex = document.querySelector('.index');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
-
-let index = 0;
-
-images.forEach((item, i) => {
-    item.addEventListener('click', () => {
-        updateImage(i);
-        popup.classList.toggle('active');
-    })
-})
-
-const updateImage = (i) => {
-    i = 1;
-    let path = `assets/img/gallery/board_game_night_1/IMG_${i+1}.JPG`;
-    console.log(path);
-    largeImage.src = path;
-    imageName.innerHTML = path;
-    imageIndex.innerHTML = `0${1+1}`;
-    index = i;
-}
-
-closeBtn.addEventListener('click', () => {
-    
-    popup.classList.toggle('active');
-})
-
-leftArrow.addEventListener('click', () => {
-    if(index > 0){
-        updateImage(index - 1);
-    }
-})
-
-rightArrow.addEventListener('click', () => {
-    if(index < 4){
-        updateImage(index + 1);
-    }
-})
-</script>
-<style>
-*:focus{
-    outline: none;
-}
-
-.gallery{
-    width: 80%;
-    height: 90vh;
-    max-width: 1600px;
-    max-height: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-	margin: auto;
-}
-
-.gallery-image{
-    width: 30%;
-    height: calc(50% - 20px);
-    min-width: 300px;
-    min-height: 200px;
-    margin: 10px;
-    overflow: hidden;
-}
-
-/* .image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: 1s;
-} */
-
-.popuup{
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 80%;
-    max-width: 1600px;
-    height: 90vh;
-    max-height: 800px;
-    border-radius: 20px;
-    background: rgba(0, 0, 0, 0.75);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
-    overflow: hidden;
-    transition: 1s;
-    opacity: 0;
-}
-
-.popuup.active{
-    /* top: 10%; */
-    z-index: 10000;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-}
-
-.popuup.active .close-btn,
-.popuup.active .image-name,
-.popuup.active .index,
-.popuup.active .large-image,
-.popuup.active .arrow-btn{
-    opacity: 1;
-    transition: opacity .5s;
-    transition-delay: 1s;
-}
-
-.top-bar{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: #000;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    font-weight: 300;
-}
-
-.image-name{
-    opacity: 0;
-}
-
-.close-btn{
-    opacity: 0;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #f00;
-    cursor: pointer;
-}
-
-.arrow-btn{
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px;
-    border-radius: 50%;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.left-arrow{
-    left: 10px;
-}
-
-.right-arrow{
-    padding-right: 15px;
-    right: 10px;
-}
-
-.arrow-btn:hover{
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.index{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 80px;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 0.4);
-    opacity: 0;
-}
-
-.large-image{
-    margin-top: 5%;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    opacity: 0;
-}
-</style>
-        <!-- <h1 style="font-family: Impact; text-align:center">
-            GALLERY
-        </h1>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img class="img-thumbnail" src="assets/img/gallery/bcer_mgn_bst/IMG_1.JPG">
-                </div>
-                <div class="col">
-                    <img class="img-thumbnail" src="assets/img/gallery/bcer_mgn_bst/IMG_2.JPG">
-                </div>
-                <div class="col">
-                    <img class="img-thumbnail" src="assets/img/gallery/bcer_mgn_bst/IMG_3.JPG">
-                </div>
+        <div class="popuup">
+            <div class="top-bar">
+                <p class="image-name">img1.png</p>
+                <span class="close-btn"></span>
             </div>
-        </div> -->
+            <button id="left" class="arrow-btn left-arrow"><img style="max-width: 60px" src="assets/img/gallery/left.png" alt=""></button>
+            <button id="right" class="arrow-btn right-arrow"><img style="max-width: 60px" src="assets/img/gallery/right.png" alt=""></button>
+            <img src="assets/img/a.jpg" class="large-image" alt="">
+            <h1 class="index">01</h1>
+        </div>
+        <script>
+        const images = [...document.querySelectorAll('.image')];
+
+        const popup = document.querySelector('.popuup');
+        const closeBtn = document.querySelector('.close-btn');
+        const imageName = document.querySelector('.image-name');
+        const largeImage = document.querySelector('.large-image');
+        const imageIndex = document.querySelector('.index');
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+
+        let index = 0;
+
+        images.forEach((item, i) => {
+            item.addEventListener('click', () => {
+                updateImage(i);
+                popup.classList.toggle('active');
+                index = 0;
+            })
+        })
+
+        var pathGlob = "";
+        var maxPhotos = 0;
+        var first = 0;
+
+        function setPath(pathVar, max) {
+            pathGlob = pathVar;
+            maxPhotos = max;
+            index = 0;
+            i = 0;
+            first = 1;
+        }
+
+        const updateImage = (i) => {
+            console.log(first);
+            if (first == 1) {
+                i = 0;
+                first = 0;
+            }
+            let path = pathGlob + `IMG_${i+1}.JPG`;
+            largeImage.src = path;
+            imageName.innerHTML = path;
+            imageIndex.innerHTML = `0${i+1}`;
+            index = i;
+        }
+
+        closeBtn.addEventListener('click', () => {
+            popup.classList.toggle('active');
+        })
+
+        leftArrow.addEventListener('click', () => {
+            if(index > 0){
+                updateImage(index - 1);
+            }
+        })
+
+        rightArrow.addEventListener('click', () => {
+            if(index < maxPhotos){
+                updateImage(index + 1);
+            }
+        })
+        </script>
+        <style>
+            *:focus{
+                outline: none;
+            }
+
+            .gallery{
+                width: 80%;
+                height: 90vh;
+                max-width: 1600px;
+                max-height: 800px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+
+            .gallery-image{
+                width: 30%;
+                height: calc(50% - 20px);
+                min-width: 300px;
+                min-height: 200px;
+                margin: 10px;
+                overflow: hidden;
+            }
+
+            .popuup{
+                position: fixed;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+                width: 80%;
+                max-width: 1600px;
+                height: 90vh;
+                max-height: 800px;
+                border-radius: 20px;
+                background: rgba(0, 0, 0, 0.75);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 5;
+                overflow: hidden;
+                transition: 1s;
+                opacity: 0;
+            }
+
+            .popuup.active{
+                /* top: 10%; */
+                z-index: 10000;
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+
+            .popuup.active .close-btn,
+            .popuup.active .image-name,
+            .popuup.active .index,
+            .popuup.active .large-image,
+            .popuup.active .arrow-btn{
+                opacity: 1;
+                transition: opacity .5s;
+                transition-delay: 1s;
+            }
+
+            .top-bar{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+                background: #000;
+                color: #fff;
+                text-align: center;
+                line-height: 50px;
+                font-weight: 300;
+            }
+
+            .image-name{
+                opacity: 0;
+            }
+
+            .close-btn{
+                opacity: 0;
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background: #f00;
+                cursor: pointer;
+            }
+
+            .arrow-btn{
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 10px;
+                border-radius: 50%;
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+
+            .left-arrow{
+                left: 10px;
+            }
+
+            .right-arrow{
+                padding-right: 15px;
+                right: 10px;
+            }
+
+            .arrow-btn:hover{
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .index{
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                font-size: 80px;
+                font-weight: 100;
+                color: rgba(255, 255, 255, 0.4);
+                opacity: 0;
+            }
+
+            .large-image{
+                margin-top: 5%;
+                width: 80%;
+                height: 80%;
+                object-fit: contain;
+                opacity: 0;
+            }
+        </style>
         <footer style="background-color:#30373E; position: fixed; bottom: 0; width: 100%;"class="footer py-4" >
             <div style="margin: auto"class="container">
                 <div class="row align-items-center">
@@ -361,27 +365,28 @@ rightArrow.addEventListener('click', () => {
                     <div class="col-3">
                         <div class="row">
                             <div class="col">
-                                <a href="https://discord.gg/cdjbUBK">
+                                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/cdjbUBK">
                                     <img class="nav-item"  style="max-height:30px" src="assets/discordlogo.png">
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="https://www.facebook.com/berkleeesports">
-                                    <img style="max-height:30px" src="assets/facebooklogo.png">
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://twitter.com/BerkleeEsports">
-                                    <img style="max-height:30px" src="assets/twitterlogo.png">
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a href="https://www.instagram.com/berkleeesports/">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/berkleeesports/">
                                     <img style="max-height:30px" src="assets/instagramlogo.png">
                                 </a>
                             </div>
                             <div class="col">
-                                <a href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/berkleeesports">
+                                    <img style="max-height:30px" src="assets/facebooklogo.png">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/BerkleeEsports">
+                                    <img style="max-height:30px" src="assets/twitterlogo.png">
+                                </a>
+                            </div>
+                            
+                            <div class="col">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
                                     <img style="max-height:30px" src="assets/youtube.png">
                                 </a>
                             </div>
