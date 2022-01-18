@@ -19,6 +19,10 @@
     <body id="page-top" style="background-image: url(assets/img/home.jpg); background-repeat: no-repeat; background-size:100%">
         <!-- Navigation-->
          <script>
+            var md = new MobileDetect(window.navigator.userAgent);
+            if (md.mobile() || md.tablet()) {
+                document.location.href = 'mobile-contact.html';
+            }
             function myFunction() {
               var popup = document.getElementById("myPopup");
               popup.classList.toggle("show");

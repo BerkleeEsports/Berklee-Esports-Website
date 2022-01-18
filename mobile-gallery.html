@@ -10,6 +10,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/dropdown.css" rel="stylesheet" />
         <link href="css/carousel.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -17,58 +19,85 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="mobile-detect.js"></script>
     </head>
-    <script>
-        var md = new MobileDetect(window.navigator.userAgent);
-        if (md.mobile() || md.tablet()) {
-            document.location.href = 'mobile-gallery.html';
-        }
-    </script>
     <body id="page-top">
-        <div class="fixed-top">
-            <img src="assets/img/navbar.png" style="width: 100%; filter: drop-shadow(0 0 0.75rem black); z-index: 5; position:absolute; top:0">
-            <div class="container" style="z-index:10; position: absolute; top: 20px; text-align: center; margin:auto; width: 100vw; max-width: 100vw">
-                <div class="row row-cols-7 align-items-center">
-                    <div class="col navtext text-center" style="padding-bottom: 1%;">
-                        <a href="about.html" style="text-decoration: none; color:white">ABOUT</a>
-                    </div>
-                    <div class="col navtext" style="padding-bottom: 1%;">
-                        <div class="dropdown">
-                            <div class="dropbtn">EVENTS</div>
-                            <div class="dropdown-content" style="transform: translateX(-45px);">
-                              <a href="gamenights.html">GAME NIGHTS</a>
-                              <a href="dnd.html">DND</a>
-                              <a href="battlebash.html">BATTLE BASH</a>
-                              <a href="gmjam.html">G/M JAM</a>
-                              <a href="underconstruction.html">UPCOMING EVENTS</a>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top py-3" id="mainNav"  style="background-color: #8a3323;filter: drop-shadow(0 0 0.75rem black);">
+            <div class="container-fluid ">
+              <a class="nav-item ms-auto" ><a class="nav-link" style="font-family: Montserrat; color:white;" href="index.html"><b>Berklee Esports</b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" style="z-index: 1000;">
+                        <a class="nav-link active" aria-current="page" style="color:white; z-index: 1000;" href="about.html">About</a>
+                      </li>	
+                    <li class="nav-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="dropdown" style="font-family: Montserrat; color:white;">
+                                    <div class="dropdown" onmouseout="show()" onmouseover="show()"> 
+                                        <a href="#!"style="color:white;" class="nav-link" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+                                            <div style="background-color: #8a3323; color:white; margin:0" class="dropdown-menu visi" aria-labelledby="dropdownMenuButton" id="jam1" >
+                                                <a class="dropdown-item" style="color:white; padding:0px"  href="gamenights.html">
+                                                    &nbsp;&nbsp;Game Nights&nbsp;&nbsp;
+                                                </a>
+                                                <a class="dropdown-item" style="color:white; padding:0px"  href="dnd.html">
+                                                    <p style="margin:10px;"></p>
+                                                    &nbsp;&nbsp;DND&nbsp;&nbsp;
+                                                </a>
+                                                <a class="dropdown-item" style="color:white; padding:0px" onmouseover="show2021()" href="battlebash.html">
+                                                    <p style="margin:10px;"></p>
+                                                    &nbsp;&nbsp;Battle Bash&nbsp;&nbsp;
+                                                </a>
+                                                <a id="item2020" class="dropdown-item" style="color:white; padding:0px" onmouseover="show2020()" href="gmjam.html">
+                                                    <p style="margin:10px;"></p>
+                                                    &nbsp;&nbsp;G/M JAM&nbsp;&nbsp;
+                                                </a>
+                                                <a id="item2020" class="dropdown-item" style="color:white; padding:0px" onmouseover="show2020()" href="underconstruction.html">
+                                                    <p style="margin:10px;"></p>
+                                                    &nbsp;&nbsp;Upcoming Events&nbsp;&nbsp;
+                                                </a>
+                                            </div>
+                                    </div>
+                                </div> 
                             </div>
-                        </div> 
-                    </div>
-                    <div class="col navtext" style="padding-bottom: 1%;">
-                        <div class="dropdown">
-                            <div class="dropbtn">TEAMS</div>
-                            <div class="dropdown-content" style="transform: translateX(-60px);">
-                              <a href="teams.html">COMPETITIVE TEAMS</a>
-                              <a href="minecraft.html">MINECRAFT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="dropdown" style="font-family: Montserrat; color:white;">
+                                    <div class="dropdown" onmouseout="show()" onmouseover="show()"> 
+                                        <a href="#!"style="color:white;" class="nav-link" id="dropdownMenuButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Teams</a>
+                                            <div style="background-color: #8a3323; color:white; margin:0" class="dropdown-menu visi" aria-labelledby="dropdownMenuButton" id="jam1" >
+                                                <a class="dropdown-item" style="color:white; padding:0px"  href="teams.html">
+                                                    &nbsp;&nbsp;Competitive Teams&nbsp;&nbsp;
+                                                </a>
+                                                <a class="dropdown-item" style="color:white; padding:0px"  href="minecraft.html">
+                                                    <p style="margin:10px;"></p>
+                                                    &nbsp;&nbsp;Minecraft&nbsp;&nbsp;
+                                                </a>
+                                            </div>
+                                    </div>
+                                </div> 
                             </div>
-                        </div> 
-                    </div>
-                    <div class="col navtext">
-                        <a href="index.html"><img src="assets/img/bsports.png" style="max-width: 80%;"></a>
-                    </div>
-                    <div class="col navtext" style="padding-bottom: 1%;">
-                        <a href="underconstruction.html" style="text-decoration: none; color:white">GALLERY</a>
-                    </div>
-                    <div class="col navtext" style="padding-bottom: 1%;">
-                        <a href="underconstruction.html" style="text-decoration: none; color:white">SHOP</a>
-                    </div>
-                    <div class="col navtext" style="padding-bottom: 1%;">
-                        <a href="contact.html" style="text-decoration: none; color:white">CONTACT</a>
-                    </div>
-                </div>
+                        </div>
+                    </li>
+                    <li class="nav-item" style="z-index: 1000;">
+                        <a class="nav-link active" aria-current="page" style="color:white; z-index: 1000;" href="gallery.html">Gallery</a>
+                      </li>	
+                      <li class="nav-item" style="padding-right: 5px">
+                        <a class="nav-link active" aria-current="page" style="color:white" href="underconstruction.html">Shop</a>
+                      </li>		
+                      <li class="nav-item" style="padding-right: 5px">
+                        <a class="nav-link active" aria-current="page" style="color:white" href="contact.html">Contact</a>
+                      </li>	
+                </ul>		  
+              </div>
             </div>
-        </div>
+          </nav>
 
-		<h2 style="margin: auto; width: 50px; text-align: center; padding-top:23vh">
+		<h2 style="margin: auto; width: 50px; text-align: center; padding-top:10vh">
 			Gallery
 		</h2>
 		<br>
@@ -150,7 +179,6 @@
               />
             </div>
           </div>
-          <br><br><br>
 
         <div class="popuup">
             <div class="top-bar">
@@ -361,39 +389,32 @@
         </style>
         <footer style="background-color:#30373E; position: fixed; bottom: 0; width: 100%;"class="footer py-4" >
             <div style="margin: auto"class="container">
-                <div class="row align-items-center">
-                    <div style="color:white"class="col text-lg-start"><b>Berklee Esports - 2022</b></div>
-                    <div style="color:white"class="col text-lg-start"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfe8TVlDEpnDpA0Nyv7QiXe1AuymMtfNPMatJOZ9QyQtO9qWQ/viewform?usp=sf_link"><u></u></a></div>
+                <div class="row">
+                    <div class="col">
+                        <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/cdjbUBK">
+                            <img class="nav-item"  style="max-height:30px" src="assets/discordlogo.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/berkleeesports/">
+                            <img style="max-height:30px" src="assets/instagramlogo.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/berkleeesports">
+                            <img style="max-height:30px" src="assets/facebooklogo.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/BerkleeEsports">
+                            <img style="max-height:30px" src="assets/twitterlogo.png">
+                        </a>
+                    </div>
                     
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col">
-                                <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/cdjbUBK">
-                                    <img class="nav-item"  style="max-height:30px" src="assets/discordlogo.png">
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/berkleeesports/">
-                                    <img style="max-height:30px" src="assets/instagramlogo.png">
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/berkleeesports">
-                                    <img style="max-height:30px" src="assets/facebooklogo.png">
-                                </a>
-                            </div>
-                            <div class="col">
-                                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/BerkleeEsports">
-                                    <img style="max-height:30px" src="assets/twitterlogo.png">
-                                </a>
-                            </div>
-                            
-                            <div class="col">
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
-                                    <img style="max-height:30px" src="assets/youtube.png">
-                                </a>
-                            </div>
-                        </div>
+                    <div class="col">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCjFOxCT-VoONTvGbYzPFqEQ">
+                            <img style="max-height:30px" src="assets/youtube.png">
+                        </a>
                     </div>
                 </div>
             </div>
