@@ -15,6 +15,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/dropdown.css" rel="stylesheet" />
         <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="mobile-detect.js"></script>
     </head>
     <body id="page-top" style="background-image: url(assets/img/home.jpg); background-repeat: no-repeat; background-size:100%">
         <!-- Navigation-->
@@ -42,7 +43,7 @@
                               <a href="gamenights.html">GAME NIGHTS</a>
                               <a href="DND.html">DND</a>
                               <a href="battlebash.html">BATTLE BASH</a>
-                              <a href="gmjam.html">G/M JAM</a>
+                              <a href="https://www.gamemusicjam.org">G/M JAM</a>
                               <a href="underconstruction.html">UPCOMING EVENTS</a>
                             </div>
                         </div> 
@@ -73,42 +74,54 @@
             </div>
         </div>
         <!-- Masthead-->
-        <p style="padding-top:20vh"></p>
-        <header class="masthead">
-            <div class="container">
-                <div style="color: black; padding: 10px; font-family: Verdana; color:white">
-                    <h1>CONTACT US</h1>
-                </div>
-            </div>
-        </header>
-        <div style="text-align: center; color:white">
-            <a style="color:white; text-decoration: none" target="_blank" rel="noopener noreferrer" href="mailto:contact@berkleeesports.com?Subject=Website%20Inquiry"><i>Email: contact@berkleeesports.com<br></i></a>
-            <p></p>
-        </div>
+        <p style="padding-top:30vh"></p>
         <div class="container">
             <div class="row">
-                <div class="col-sm"></div>
+                <div class="col"></div>
                 <div class="col">
-                    <form action="https://postmail.invotes.com/send" method="post" id="email_form">
-                        <center>
-                            <label for="exampleFormControlInput1"></label><!--
-                             --><input type="text" name="subject" placeholder="Subject" />
-                             <br>
-                             <p></p>
-                            <textarea name="text" placeholder="Message" style="overflow:scroll; resize:none" rows="4"></textarea>
-                            <br>
+                    <div style="background: rgba(0,0,0,.5);">
+                        <!-- <header class="masthead"> -->
+                            <div class="container">
+                                <div style="text-align: center;color: black; padding: 10px; font-family: Impact; color:white">
+                                    <br>
+                                    <h1 style="font-family: Impact;">CONTACT US</h1>
+                                </div>
+                            </div>
+                        <!-- </header> -->
+                        <div style="text-align: center; color:white">
+                            <a style="color:white; text-decoration: none;" target="_blank" rel="noopener noreferrer" href="mailto:contact@berkleeesports.com?Subject=Website%20Inquiry"><i>Email: contact@berkleeesports.com<br></i></a>
                             <p></p>
-                            <input type="hidden" name="access_token" value="9357nuexai07bsn7c7s0opil" />
-                            <input type="hidden" name="success_url" value="https://berkleeesports.com/contact_success.html" />
-                            <input type="hidden" name="error_url" value="https://berkleeesports.com/contact_failure.html" />
-                            <input id="submit_form" type="submit" value="Send" />
-                        </center>
-                    </form>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm"></div>
+                                <div class="col">
+                                    <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                                        <center>
+                                            <label for="exampleFormControlInput1"></label><!--
+                                            --><input type="text" name="subject" placeholder="Subject" />
+                                            <br>
+                                            <p></p>
+                                            <textarea name="text" placeholder="Message" style="overflow:scroll; resize:none" rows="4"></textarea>
+                                            <br>
+                                            <p></p>
+                                            <input type="hidden" name="access_token" value="9357nuexai07bsn7c7s0opil" />
+                                            <input type="hidden" name="success_url" value="https://berkleeesports.com/contact_success.html" />
+                                            <input type="hidden" name="error_url" value="https://berkleeesports.com/contact_failure.html" />
+                                            <input id="submit_form" type="submit" value="Send" />
+                                        </center>
+                                    </form>
+                                </div>
+                                <div class="col-sm"></div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
                 </div>
-                <div class="col-sm"></div>
+                <div class="col"></div>
             </div>
         </div>
-        <br><br><br><br><br>
+        <br><br><br>
             <br><br>
         </div>
        <footer style="background-color:#30373E; position: fixed; bottom: 0; width: 100%;"class="footer py-4" >
