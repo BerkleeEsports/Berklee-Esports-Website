@@ -10,6 +10,13 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @font-face {
+  font-family: 'MyWebFont';
+  src:  url('Impact.ttf') format('ttf'),
+        url('Impact.ttf') format('ttf');
+}
+
  .navtext {
   color:white;
   max-height: 15%;
